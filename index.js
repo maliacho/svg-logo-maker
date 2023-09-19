@@ -2,8 +2,7 @@
 const inquirer = require('inquirer')
 
 // Ask user for input on logo design
-const questions = [
-    .prompt([
+const questions = [ 
     {
         type: 'list',
         message : 'What shape would you like your logo to be?',
@@ -24,7 +23,16 @@ const questions = [
         message : 'What text would you like displayed on your logo?',
         name : 'textInput',
     }
-])
-]
+];
 
-// if the user 
+const responseHandler = () => {
+
+}
+
+const init = (questionsArray, handlerFunction) => {
+    inquirer
+      .prompt(questionsArray)
+      .then(handlerFunction)
+  };
+
+  init(questions, responseHandler)
