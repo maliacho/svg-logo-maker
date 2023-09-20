@@ -1,5 +1,6 @@
 // import necessary files and define global variables
 const inquirer = require('inquirer')
+const shapes = require('./lib/shapes')
 
 // Ask user for input on logo design
 const questions = [ 
@@ -22,6 +23,11 @@ const questions = [
         type : 'input',
         message : 'What text would you like displayed on your logo?',
         name : 'textInput',
+    }
+    {
+        type: 'input',
+        message : 'What color would you like the text to be?',
+        name : 'textColorInput',
     }
 ];
 
