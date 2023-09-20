@@ -52,6 +52,11 @@ const init = async () => {
     } else {
         console.log('Please select a shape from the list.')
     }
+
+    let shapeColor;
+    if (shapeColor === '')
+
+
   };
 
   init();
