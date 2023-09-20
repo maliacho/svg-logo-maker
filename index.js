@@ -42,10 +42,16 @@ function writeToFile (fileName, data) {
 const init = async () => {
     const results = await inquirer.prompt(questions)
     //   .then(writeToFile)
-    // let shapeChoice = results.shapeInput;
-    // let colorChoice = results.colorInput;
-    // let textChoice = results.textInput;
-    // let textColorChoice = results.textColorInput; 
+    let shapeChoice;
+    if (shapeChoice === 'Square') {
+        shapeChoice = new Square();
+    } else if (shapeChoice === 'Circle') {
+        shapeChoice = new Circle;
+    } else if (shapeChoice === 'Triangle') {
+        shapeChoice = new Triangle;
+    } else {
+        console.log('Please select a shape from the list.')
+    }
   };
 
   init();
