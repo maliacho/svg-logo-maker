@@ -1,8 +1,5 @@
 # SVG Logo Maker
 
-
-
-
 ## User Story
 AS a freelance web developer
 I WANT to generate a simple logo for my projects
@@ -23,3 +20,14 @@ THEN an SVG file is created named `logo.svg`
 AND the output text "Generated logo.svg" is printed in the command line
 WHEN I open the `logo.svg` file in a browser
 THEN I am shown a 300x200 pixel image that matches the criteria I entered
+
+## Screenshot/Video
+
+## Technologies Used
+VS Code, JavaScript, Node, Inquirer, Jest
+
+## Installation
+To use this application, you must install the Node packages Inquirer and Jest. 
+
+## License
+MIT
