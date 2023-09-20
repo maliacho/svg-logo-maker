@@ -1,6 +1,7 @@
 // import necessary files and define global variables
 const inquirer = require('inquirer')
 const {Circle, Square, Triangle} = require('./lib/shapes')
+const fs = require('fs');
 
 // Ask user for input on logo design
 const questions = [ 
@@ -31,14 +32,16 @@ const questions = [
     }
 ];
 
-const responseHandler = () => {
 
+function writeToFile (data) {
+    fs.writeFile(`${fileName}.svg`, data, (err) => {
+        err ? console.error(err) : console.log(`Your logo has been created.`)
+    })
 }
 
-const init = (questionsArray, handlerFunction) => {
-    inquirer
-      .prompt(questionsArray)
-      .then(handlerFunction)
+const init = () => {
+    inquirer.prompt(questions)
+      .then(writeToFile)
   };
 
-  init(questions, responseHandler)
+  init();
