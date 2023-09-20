@@ -1,6 +1,6 @@
 // import necessary files and define global variables
 const inquirer = require('inquirer')
-const shapes = require('./lib/shapes')
+const {Circle, Square, Triangle} = require('./lib/shapes')
 
 // Ask user for input on logo design
 const questions = [ 
