@@ -33,15 +33,19 @@ const questions = [
 ];
 
 
-function writeToFile (data) {
+function writeToFile (fileName, data) {
     fs.writeFile(`${fileName}.svg`, data, (err) => {
         err ? console.error(err) : console.log(`Your logo has been created.`)
     })
 }
 
-const init = () => {
-    inquirer.prompt(questions)
-      .then(writeToFile)
+const init = async () => {
+    const results = await inquirer.prompt(questions)
+    //   .then(writeToFile)
+    // let shapeChoice = results.shapeInput;
+    // let colorChoice = results.colorInput;
+    // let textChoice = results.textInput;
+    // let textColorChoice = results.textColorInput; 
   };
 
   init();
