@@ -23,6 +23,12 @@ THEN I am shown a 300x200 pixel image that matches the criteria I entered
 
 ## Screenshot/Video
 
+
+https://github.com/maliacho/svg-logo-maker/assets/141271179/9dd858ba-4af6-4974-ade9-09d816cf8c1b
+
+
+
+
 ## Technologies Used
 VS Code, JavaScript, Node, Inquirer, Jest
 
